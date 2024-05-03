@@ -1,0 +1,15 @@
+local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
+local window = library:init("Lyno Tools RAL Edition V1", true, Enum.KeyCode.RightShift, true)
+
+window:Divider("Supported With All Games")
+local sectionA = window:Section("Universal")
+sectionA:Button("Infinite Yield", function() 
+    window:TempNotify("Lyno Tools", "Infinite Yield Activated!", "rbxassetid://12608259004") 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+sectionA:Button("Dark Dex", function() 
+    window:TempNotify("Lyno Tools", "Dark Dex Activated!", "rbxassetid://12608259004") 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpeedSterKawaii/Dark-Dex/main/dex.lua"))()
+end)
+sectionA:Divider("Games")
